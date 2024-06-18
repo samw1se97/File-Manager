@@ -1,0 +1,47 @@
+.mainNvigator {
+  padding: 0 1rem;
+  min-width: 100px;
+  border-right: 1px solid var(--grey-border);
+}
+
+.mainNvigator > header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.mainNvigator > ul {
+  padding: 0.2rem 0;
+}
+.mainNvigator > ul .folderLi {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainNvigator > ul .folderLi:hover {
+  cursor: pointer;
+  border-right: 2px solid var(--primary-color);
+}
+
+.isActive {
+  border-right: 2px solid var(--primary-color);
+}
+
+.mainNvigator > ul .folderLi > svg {
+  font-size: 1.3rem;
+  margin: 0.3rem 0;
+}
+
+.mainNvigator > input {
+  width: 100%;
+  height: 25px;
+  border-radius: 0.3rem;
+  border-style: none;
+}
+
+.mainNvigator > form > label {
+  position: relative;
+}

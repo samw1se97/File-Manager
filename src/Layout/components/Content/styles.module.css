@@ -1,0 +1,9 @@
+.mainContent {
+  width: 85%;
+  height: 90%;
+  background-color: #efeee6;
+  border-radius: 0.8rem;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 17% 1fr;
+}

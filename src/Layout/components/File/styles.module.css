@@ -1,0 +1,70 @@
+.file_box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0.3rem 0.3rem;
+  max-width: 200px;
+  min-width: 120px;
+  width: 25%;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 2px 4px 4px -5px rgb(0 0 0 / 49%);
+  border-radius: 0.5rem;
+}
+.file_box > svg {
+  min-width: 48px;
+  width: 48px;
+}
+.file_box > p {
+  font-size: 0.8rem;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file_box:hover,
+.file_box > span {
+  border-left: 3px solid var(--primary-color);
+}
+
+.file_box > span {
+  padding-left: inherit;
+  border-left: 1px solid var(--grey-border);
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.file_box span > svg {
+  display: block;
+}
+.file_box > ul {
+  background: #f7f7f7;
+  position: absolute;
+  top: 25px;
+  right: -20px;
+  z-index: 1;
+  display: none;
+  box-shadow: 1px 2px 4px #00000057;
+  border-radius: 0.3rem;
+}
+
+.file_box > .menu li {
+  list-style: none;
+  margin: auto 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.file_box > .menu li > svg {
+  font-size: 1.3rem;
+}
+.file_box > .menu {
+  display: block;
+}
+
+.file_box:hover {
+  cursor: pointer;
+}
